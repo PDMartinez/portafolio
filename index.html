@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pedro Danilo Martínez Silva | Tech Lead</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter"],
+            },
+            colors: {
+              primary: "#2563eb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-slate-950 text-white font-sans">
+    <!-- NAVBAR -->
+
+    <header
+      class="fixed top-0 w-full bg-slate-950/80 backdrop-blur border-b border-slate-800 z-50"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex justify-between items-center h-16">
+          <h1 class="font-bold text-xl">Pedro Martínez</h1>
+
+          <nav class="hidden md:flex gap-8 text-sm">
+            <a href="#about" class="hover:text-blue-400">Sobre mí</a>
+
+            <a href="#projects" class="hover:text-blue-400">Proyectos</a>
+
+            <a href="#skills" class="hover:text-blue-400">Tecnologías</a>
+
+            <a href="#contact" class="hover:text-blue-400">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="min-h-screen flex items-center">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div class="flex flex-col justify-center">
+          <p class="text-blue-400 font-semibold mb-2">Hola 👋 Soy</p>
+
+          <h1 class="text-5xl font-extrabold leading-tight mb-5">
+            Pedro Danilo
+            <br />
+            Martínez Silva
+          </h1>
+
+          <h2 class="text-xl text-slate-300 mb-6">
+            Supervisor de Desarrollo • Analista Funcional • Tech Lead •
+            Ingeniero de Software • Desarrollador Full Stack
+          </h2>
+
+          <p class="text-slate-400 leading-relaxed">
+            Ingeniero Informático con más de
+            <strong>7 años de experiencia</strong>
+            liderando equipos y desarrollando soluciones empresariales con
+            tecnologías como Laravel, Angular, GeneXus, Docker, Node.js, PHP,
+            Inteligencia Artificial, Base de datos relacionales y no
+            Relacionales, Linux, entre otros.
+          </p>
+
+          <div class="flex gap-4 mt-8">
+            <a
+              href="#projects"
+              class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold"
+            >
+              Ver proyectos
+            </a>
+
+            <a
+              href="assets/cv.pdf"
+              class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800"
+            >
+              Descargar CV
+            </a>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+
+        <div class="flex justify-center items-center">
+          <div
+            class="w-80 h-80 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 p-1"
+          >
+            <img
+              src="assets/perfil.jpg"
+              class="rounded-full w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+
+    <section id="about" class="py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8">Sobre mí</h2>
+
+        <p class="text-slate-400 leading-8">
+          Especialista en desarrollo Full Stack, liderazgo técnico y gestión de
+          proyectos tecnológicos. He trabajado en empresas nacionales e
+          internacionales desarrollando soluciones empresariales, integraciones
+          con Inteligencia Artificial y arquitecturas escalables.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section id="projects" class="py-20 bg-slate-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12">Proyectos Destacados</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <!-- Imagen del proyecto -->
+            <img
+              src="assets/crm.jpg"
+              alt="CRM con IA"
+              class="w-full h-44 object-cover hover:scale-105 transition duration-500"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold">CRM con IA</h3>
+
+              <p class="text-slate-400 mt-4">
+                Plataforma para automatización de llamadas mediante agentes
+                inteligentes y ChatBots.
+              </p>
+
+              <!-- Tecnologías -->
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  HTML
+                </span>
+
+                <span
+                  class="text-xs bg-cyan-600/20 text-cyan-300 px-2 py-1 rounded"
+                >
+                  Tailwind CSS
+                </span>
+
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+
+                <span
+                  class="text-xs bg-green-600/20 text-green-300 px-2 py-1 rounded"
+                >
+                  PostgreSQL
+                </span>
+
+                <span
+                  class="text-xs bg-cyan-600/20 text-cyan-300 px-2 py-1 rounded"
+                >
+                  OpenAI
+                </span>
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  PHP
+                </span>
+              </div>
+
+              <!-- Información de acceso -->
+              <div class="mt-6 border-t border-slate-700 pt-4 text-sm">
+                <p class="text-slate-300">
+                  🌐
+                  <a
+                    href="https://crm.aratic.net/"
+                    target="_blank"
+                    class="text-blue-400 hover:underline"
+                  >
+                    Abrir sistema
+                  </a>
+                </p>
+
+                <p class="text-slate-400 mt-2">
+                  <strong>Usuario:</strong>
+                  danilo@nallam.es
+                </p>
+
+                <p class="text-slate-400">
+                  <strong>Contraseña:</strong>
+                  12345678
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <!-- Imagen del proyecto -->
+            <img
+              src="assets/sigo.jpg"
+              alt="Gestión de Obras"
+              class="w-full h-44 object-cover hover:scale-105 transition duration-500"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Gestión de Obras</h3>
+
+              <p class="text-slate-400 mt-4">
+                Sistema integral para administración de proyectos de
+                construcción.
+              </p>
+
+              <!-- Tecnologías -->
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  Angular
+                </span>
+
+                <span
+                  class="text-xs bg-cyan-600/20 text-cyan-300 px-2 py-1 rounded"
+                >
+                  Node.js
+                </span>
+
+                <span
+                  class="text-xs bg-green-600/20 text-green-300 px-2 py-1 rounded"
+                >
+                  Redis - MongoDB
+                </span>
+              </div>
+
+              <!-- Información de acceso -->
+              <div class="mt-6 border-t border-slate-700 pt-4 text-sm">
+                <p class="text-slate-300">
+                  🌐
+                  <a
+                    href="https://gastos.aratic.net/"
+                    target="_blank"
+                    class="text-blue-400 hover:underline"
+                  >
+                    Abrir sistema
+                  </a>
+                </p>
+
+                <p class="text-slate-400 mt-2">
+                  <strong>Usuario:</strong>
+                  admin
+                </p>
+
+                <p class="text-slate-400">
+                  <strong>Contraseña:</strong>
+                  @Sigovvo020
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800 rounded-xl overflow-hidden">
+            <!-- Imagen del proyecto -->
+            <img
+              src="assets/gastos.jpg"
+              alt="Sistema de Gastos"
+              class="w-full h-44 object-cover hover:scale-105 transition duration-500"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Sistema de Gastos</h3>
+
+              <p class="text-slate-400 mt-4">
+                Gestión de gastos e ingresos y reportes financieros asistido por
+                inteligencia artificial.
+              </p>
+
+              <!-- Tecnologías -->
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  HTML
+                </span>
+
+                <span
+                  class="text-xs bg-cyan-600/20 text-cyan-300 px-2 py-1 rounded"
+                >
+                  Bootstrap
+                </span>
+
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+
+                <span
+                  class="text-xs bg-green-600/20 text-green-300 px-2 py-1 rounded"
+                >
+                  MySQL
+                </span>
+
+                <span
+                  class="text-xs bg-cyan-600/20 text-cyan-300 px-2 py-1 rounded"
+                >
+                  OpenAI
+                </span>
+                <span
+                  class="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded"
+                >
+                  PHP
+                </span>
+              </div>
+
+              <!-- Información de acceso -->
+              <div class="mt-6 border-t border-slate-700 pt-4 text-sm">
+                <p class="text-slate-300">
+                  🌐
+                  <a
+                    href="https://gastos.aratic.net/"
+                    target="_blank"
+                    class="text-blue-400 hover:underline"
+                  >
+                    Abrir sistema
+                  </a>
+                </p>
+
+                <p class="text-slate-400 mt-2">
+                  <strong>Usuario:</strong>
+                  danilom012.dms@gmail.com
+                </p>
+
+                <p class="text-slate-400">
+                  <strong>Contraseña:</strong>
+                  12345678
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="skills" class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-10">Tecnologías</h2>
+
+        <div class="flex flex-wrap gap-4">
+          <span class="bg-slate-800 px-4 py-2 rounded-full">HTML</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">CSS</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">JavaScript</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Tailwind CSS</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Bootstrap</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Angular</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Laravel</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Git</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">GitHub</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">PHP</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Java</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Node.js</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Python</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Docker</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">PostgreSQL</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">MySQL</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">OpenAI</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">Linux</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">VPS</span>
+
+          <span class="bg-slate-800 px-4 py-2 rounded-full">CI/CD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contact" class="py-20 bg-slate-900">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold">Contacto</h2>
+
+        <p class="text-slate-400 mt-4">
+          ¿Tienes un proyecto o una oportunidad laboral? Estaré encantado de
+          conversar contigo.
+        </p>
+
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <a
+            href="mailto:danilom012.dms@gmail.com"
+            class="bg-blue-600 px-6 py-3 rounded-lg"
+          >
+            Email
+          </a>
+
+          <a
+            href="https://github.com/PDMartinez"
+            target="_blank"
+            class="bg-slate-800 px-6 py-3 rounded-lg"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/pedro-danilo-martinez-silva-b32516266/"
+            target="_blank"
+            class="bg-slate-800 px-6 py-3 rounded-lg"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-6 py-8 text-center text-slate-500">
+        © 2026 Pedro Danilo Martínez Silva · Tech Lead · Software Engineer
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
